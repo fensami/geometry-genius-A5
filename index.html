@@ -5,9 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>hellow
-    </h1>
+    <!-- Header -->
+    <header class="flex container mx-auto bg-green-500 mt-5 mb-5 p-4 rounded ">
+        <div class="grow">
+            <h1 class="font-bold text-3xl mb-2">Interactive</h1>
+        <h3 class="font-semibold">Geometry Genius</h3>
+        </div>
+        <div >
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5">Blog</button>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main class="container mx-auto mb-10">
+       <div class="grid lg:grid-cols-4 sm:grid-cols-1 gap-11">
+        <!-- Triangle  1-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-40 mt-5" src="images/triangle.png" alt="">
+            <h2 class="font-semibold text-3xl mt-5 mb-2">Triangle</h2>
+            <h4>Area(A) = 0.5 x b x h</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+         <!-- Rectangle   2-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-40 mt-11" src="images/rectangle.png" alt="">
+            <h2 class="font-semibold text-3xl mt-5 mb-2">Rectangle</h2>
+            <h4>Area(A) = w x l</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="W">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="I">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+          <!-- Parallelogram  3-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-40 mt-14" src="images/parallelogram.png" alt="">
+            <h2 class="font-semibold text-3xl mt-5 mb-2">Parallelogram</h2>
+            <h4>Area(A) = b x h</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5  rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+         <!--------------
+             Area Calculation
+        --------------- -->
+         <article class="border ">
+            <h2 class="font-semibold text-center">Area Calculation</h2>
+
+
+        </article>
+
+
+
+
+         <!-- Rhombus   4-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-40 mt-8" src="images/rhombus.png" alt="">
+            <h2 class="font-semibold text-3xl mt-5 mb-2">Rhombus</h2>
+            <h4>Area(A) = 0.5 x b x h</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+
+         <!-- Pentagon   5-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-32 mt-5" src="images/pentagon.png" alt="">
+            <h2 class="font-semibold text-3xl mt-5 mb-2">Pentagon</h2>
+            <h4>Area(A) = 0.5 x b x h</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+
+        <!-- Ellipse   6-->
+        <article class="w-80 h-96 text-center border">
+            <img class="mx-auto w-1/2 mt-5" src="images/ellipse.png" alt="">
+            <h2 class="font-semibold text-3xl mt-11 mb-2">Ellipse</h2>
+            <h4>Area(A) = 0.5 x b x h</h4>
+
+            <div class="flex ml-16 mt-5">
+                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <h4 class="inline ml-3">cm</h4>
+                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <h4 class="inline ml-3 ">cm</h4>
+            </div>
+            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+        </article>
+
+       </div>
+    </main>
+    
 </body>
 </html>
