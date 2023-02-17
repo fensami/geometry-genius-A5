@@ -30,12 +30,12 @@
             <h4>Area(A) = 0.5 x b x h</h4>
 
             <div class="flex ml-16 mt-5">
-                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="b-input" class="w-10 border pl-2" type="text" placeholder="b">
                 <h4 class="inline ml-3">cm</h4>
-                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="h-input" class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
-            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+            <button id="btn-calculate-rectangle" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
         </article>
 
          <!-- Rectangle   2-->
@@ -73,6 +73,7 @@
         --------------- -->
          <article class="border ">
             <h2 class="font-semibold text-center">Area Calculation</h2>
+            <h3>Triangle <span id="area-triangle"></span></h3>
 
 
         </article>
@@ -129,6 +130,8 @@
 
        </div>
     </main>
+
+    <script src="js/rectangle.js"></script>
     
 </body>
 </html>
