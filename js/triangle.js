@@ -5,9 +5,11 @@ document.getElementById('btn-calculate-triangle').addEventListener('click', func
     const total = 0.5 * baseInput * heightInput;
     if(total){
         
+
     }
     else{
-        alert('please enter amount')
+        alert('please enter amount');
+        setTextElementById();
     }
     
     setTextElementById('area-triangle', total);

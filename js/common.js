@@ -1,15 +1,15 @@
 //funtion --1
-function inputValueById(input){
-    const bInput = document.getElementById(input);
-    const bInputString = bInput.value;
-    const bInputNumber = parseFloat(bInputString);
-    return bInputNumber;
+function inputValueById(element){
+    const input = document.getElementById(element);
+    const inputString = input.value;
+    const inputNumber = parseFloat(inputString);
+    return inputNumber;
+    
 
 }
 
-
 //funtion --2
 function setTextElementById(elementId , value){
-    const areaTriangle =document.getElementById(elementId);
-    areaTriangle.innerText =value
+    const textArea =document.getElementById(elementId);
+    textArea.innerText =value
 }
