@@ -9,10 +9,6 @@ document.getElementById('btn-calculate-triangle').addEventListener('click', func
     else{
         alert('please enter amount')
     }
-
-    const areaTriangle =document.getElementById('area-triangle');
-    // const areaTriangleString = areaTriangle.innerText;
-    areaTriangle.innerText = total;
-
-
+    
+    setTextElementById('area-triangle', total);
 })

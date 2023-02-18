@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="grid grid-cols-2 container mx-auto bg-green-500 mt-5 mb-5 p-4 rounded ">
-        <div>
-            <h1 class="font-bold text-3xl mb-2">Interactive</h1>
+    <header class="flex container mx-auto bg-green-500 mt-5 mb-5 p-4 rounded ">
+        <div class="grow">
+            <h1 class="font-bold text-3xl mb-2 ">Interactive</h1>
         <h3 class="font-semibold">Geometry Genius</h3>
         </div>
         <div >
-            <button id="blog" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5">Blog</button>
+            <button id="blog" class="bg-blue-500 p-3 mt-5 mr-5 w-32 rounded text-white font-semibold mb-5">Blog</button>
         </div>
     </header>
 
@@ -45,9 +45,9 @@
             <h4>Area(A) = w x l</h4>
 
             <div class="flex ml-16 mt-5">
-                <input id="w-input" class="w-10 border pl-2" type="text" placeholder="W">
+                <input id="width-input" class="w-10 border pl-2" type="text" placeholder="W">
                 <h4 class="inline ml-3">cm</h4>
-                <input id="i-input" class="inline w-10 border ml-10 pl-2" type="text" placeholder="I">
+                <input id="length-input" class="inline w-10 border ml-10 pl-2" type="text" placeholder="l">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
             <button id="btn-calculate-rectangle" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
@@ -60,25 +60,44 @@
             <h4>Area(A) = b x h</h4>
 
             <div class="flex ml-16 mt-5">
-                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="base-parallelogram" class="w-10 border pl-2" type="text" placeholder="b">
                 <h4 class="inline ml-3">cm</h4>
-                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="height-parallelogram" class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
-            <button class="bg-blue-500 p-3 mt-5  rounded text-white font-semibold mb-5 w-64">Calculate</button>
+            <button id="btn-parallelogram" class="bg-blue-500 p-3 mt-5  rounded text-white font-semibold mb-5 w-64">Calculate</button>
         </article>
 
-         <!--------------
+         <!----------------------------------
              Area Calculation
-        --------------- -->
+        ------------------------------------- -->
          <article class="border w-80 h-96 ">
-            <h2 class="font-semibold text-center">Area Calculation</h2>
+            <h2 class="font-semibold text-center mb-5 mt-2">Area Calculation</h2>
 
-           <div class="flex">
-            <h3 class="grow">Triangle <span id="area-triangle" class=" font-bold"></span></h3> 
-            <button class="bg-blue-500 p-2  rounded text-white">convert to m</button>
+
+            <!-- Triangle output -->
+           <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
+            <h3 >Triangle : <span id="area-triangle" class=" font-bold"></span></h3> 
+            <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
            </div>
-            <h3>Rectangle <span id="area-rectangle" class="font-bold"></span></h3>
+            
+           <!-- Rectangle output -->
+           <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
+            <h3>Rectangle : <span id="area-rectangle" class="font-bold"></span></h3>
+            <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
+           </div>
+
+           <!-- Parallelogram output-->
+           <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
+            <h3>Rectangle : <span id="area-parallelogram" class="font-bold"></span></h3>
+            <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
+           </div>
+
+           <!-- Rhombus output -->
+           <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
+            <h3>Rhombus : <span id="area-rhombus" class="font-bold"></span></h3>
+            <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
+           </div>
 
 
         </article>
@@ -90,15 +109,15 @@
         <article class="w-80 h-96 text-center border">
             <img class="mx-auto w-40 mt-8" src="images/rhombus.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Rhombus</h2>
-            <h4>Area(A) = 0.5 x b x h</h4>
+            <h4>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h4>
 
             <div class="flex ml-16 mt-5">
-                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="rhombus-diagonal-1" class="w-10 border pl-2" type="text" placeholder="d1">
                 <h4 class="inline ml-3">cm</h4>
-                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="rhombus-diagonal-2" class="inline w-10 border ml-10 pl-2" type="text" placeholder="d2">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
-            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+            <button id="btn-rhombus" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
         </article>
 
 
@@ -122,7 +141,7 @@
         <article class="w-80 h-96 text-center border">
             <img class="mx-auto w-1/2 mt-5" src="images/ellipse.png" alt="">
             <h2 class="font-semibold text-3xl mt-11 mb-2">Ellipse</h2>
-            <h4>Area(A) = 3.14 x b x h</h4>
+            <h4>Area(A) = π x b x h</h4>
 
             <div class="flex ml-16 mt-5">
                 <input class="w-10 border pl-2" type="text" placeholder="b">
@@ -139,6 +158,11 @@
     <script src="js/common.js"></script>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
+    <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
+
+
+    <!-- next page botton event handler -->
     <script>
         document.getElementById('blog').addEventListener('click', function(){
             window.location.href = 'questionAnswer.html'

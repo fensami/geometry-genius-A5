@@ -1,9 +1,7 @@
  document.getElementById('btn-calculate-rectangle').addEventListener('click', function(){
-    const wInput = inputValueById('w-input');
-    const iInput = inputValueById('i-input');
-    const total = wInput * iInput;
+    const widthInput = inputValueById('width-input');
+    const lengthInput = inputValueById('length-input');
+    const total = widthInput * lengthInput;
 
-   const areaRectangle = document.getElementById('area-rectangle');
-   areaRectangle.innerText = total;
-    
+   setTextElementById('area-rectangle', total);
 })
