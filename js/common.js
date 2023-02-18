@@ -3,6 +3,7 @@ function inputValueById(element){
     const input = document.getElementById(element);
     const inputString = input.value;
     const inputNumber = parseFloat(inputString);
+    
     //alert
     if(inputNumber){
     }
@@ -20,4 +21,5 @@ function inputValueById(element){
 function setTextElementById(elementId , value){
     const textArea =document.getElementById(elementId);
     textArea.innerText =value
+    
 }

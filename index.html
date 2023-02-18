@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="lg:flex  container mx-auto bg-cyan-300 mt-5 mb-5 p-4 rounded ">
+    <header class="lg:flex  container mx-auto bg-cyan-300 mt-5 mb-5 p-4 rounded-lg ">
         <div class="grow">
             <h1 class="font-bold text-3xl mb-2 ">Interactive</h1>
         <h3 class="font-semibold">Geometry Genius</h3>
@@ -20,11 +20,13 @@
     </header>
 
 
-    <!-- Main -->
+    <!---------
+          Main
+      ----------->
     <main class="container mx-auto mb-10">
-       <div class="grid sm:grid-cols-1 sm:order-1 lg:grid-cols-4  gap-11">
+       <div class="grid sm:grid-cols-1 lg:grid-cols-4  gap-11 order-1">
         <!-- Triangle  1-->
-        <article class="w-80 h-96 text-center border rounded-lg">
+        <article class="w-80 h-96 text-center border rounded-lg order-1 md:order-1">
             <img class="mx-auto w-40 mt-5" src="images/triangle.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Triangle</h2>
             <h4>Area(A) = 0.5 x b x h</h4>
@@ -39,7 +41,7 @@
         </article>
 
          <!-- Rectangle   2-->
-        <article class="w-80 h-96 text-center border rounded-lg  ">
+        <article class="w-80 h-96 text-center border rounded-lg  order-2 md:order-2 ">
             <img class="mx-auto w-40 mt-11" src="images/rectangle.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Rectangle</h2>
             <h4>Area(A) = w x l</h4>
@@ -54,7 +56,7 @@
         </article>
 
           <!-- Parallelogram  3-->
-        <article class="w-80 h-96 text-center border rounded-lg ">
+        <article class="w-80 h-96 text-center border rounded-lg order-3 md:order-3 ">
             <img class="mx-auto w-40 mt-14" src="images/parallelogram.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Parallelogram</h2>
             <h4>Area(A) = b x h</h4>
@@ -71,44 +73,44 @@
          <!----------------------------------
              Area Calculation
         ------------------------------------- -->
-         <article class="border w-80 h-auto">
+         <article class="border w-80 h-auto order-7 md:order-4">
             <h2 class="font-semibold text-center mb-5 mt-2">Area Calculation</h2>
 
 
             <!-- Triangle output -->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3 >Triangle : <span id="area-triangle" class=" font-bold"></span> cm<sup>2</sup></h3> 
+            <h3 class="font-semibold">Triangle : <span id="area-triangle" class=" font-bold"></span> cm<sup>2</sup></h3> 
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
             
            <!-- Rectangle output -->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3>Rectangle : <span id="area-rectangle" class="font-bold"></span> cm<sup>2</sup></h3>
+            <h3 class="font-semibold">Rectangle : <span id="area-rectangle" class="font-bold"></span> cm<sup>2</sup></h3>
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
 
            <!-- Parallelogram output-->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3>Rectangle : <span id="area-parallelogram" class="font-bold"></span> cm<sup>2</sup></h3>
+            <h3 class="font-semibold">Rectangle : <span id="area-parallelogram" class="font-bold"></span> cm<sup>2</sup></h3>
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
 
            <!-- Rhombus output -->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3>Rhombus : <span id="area-rhombus" class="font-bold"></span> cm<sup>2</sup></h3>
+            <h3 class="font-semibold">Rhombus : <span id="area-rhombus" class="font-bold"></span> cm<sup>2</sup></h3>
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
 
            <!-- Pentagon output -->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3>Pentagon : <span id="area-pentagon" class="font-bold"></span> cm<sup>2</sup></h3>
+            <h3 class="font-semibold">Pentagon : <span id="area-pentagon" class="font-bold"></span> cm<sup>2</sup></h3>
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
 
 
            <!-- Ellipse output -->
            <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
-            <h3>Ellipse : <span id="area-ellipse" class="font-bold"></span> cm<sup>2</sup></h3>
+            <h3 class="font-semibold">Ellipse : <span id="area-ellipse" class="font-bold"></span> cm<sup>2</sup></h3>
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m<sup>2</sup></button>
            </div>
 
@@ -119,7 +121,7 @@
 
 
          <!-- Rhombus   4-->
-        <article class="w-80 h-96 text-center border rounded-lg ">
+        <article class="w-80 h-96 text-center border rounded-lg order-4 md:order-5 ">
             <img class="mx-auto w-40 mt-8" src="images/rhombus.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Rhombus</h2>
             <h4>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h4>
@@ -135,7 +137,7 @@
 
 
          <!-- Pentagon   5-->
-        <article class="w-80 h-96 text-center border rounded-lg  ">
+        <article class="w-80 h-96 text-center border rounded-lg  order-5  md:order-6">
             <img class="mx-auto w-32 mt-5" src="images/pentagon.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Pentagon</h2>
             <h4>Area(A) = 0.5 x p x b</h4>
@@ -151,15 +153,15 @@
 
 
         <!-- Ellipse   6-->
-        <article class="w-80 h-96 text-center border rounded-lg">
+        <article class="w-80 h-96 text-center border rounded-lg order-6 md:order-7">
             <img class="mx-auto w-1/2 mt-5" src="images/ellipse.png" alt="">
             <h2 class="font-semibold text-3xl mt-11 mb-2">Ellipse</h2>
             <h4>Area(A) = πab</h4>
 
             <div class="flex ml-16 mt-5">
-                <input id="input-A" class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="input-A" class="w-10 border pl-2" type="text" placeholder="a">
                 <h4 class="inline ml-3">cm</h4>
-                <input id="input-B" class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="input-B" class="inline w-10 border ml-10 pl-2" type="text" placeholder="b">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
             <button id="btn-ellipse" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
@@ -168,6 +170,7 @@
        </div>
     </main>
 
+    <!-- script file -->
     <script src="js/common.js"></script>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
