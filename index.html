@@ -99,6 +99,12 @@
             <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
            </div>
 
+           <!-- Pentagon output -->
+           <div class="flex justify-between justify-items-center content-center mb-5 ml-2">
+            <h3>Pentagon : <span id="area-pentagon" class="font-bold"></span></h3>
+            <button class="bg-blue-500 p-2 mr-5  rounded text-white">convert to m</button>
+           </div>
+
 
         </article>
 
@@ -106,7 +112,7 @@
 
 
          <!-- Rhombus   4-->
-        <article class="w-80 h-96 text-center border">
+        <!-- <article class="w-80 h-96 text-center border">
             <img class="mx-auto w-40 mt-8" src="images/rhombus.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Rhombus</h2>
             <h4>Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></h4>
@@ -118,22 +124,22 @@
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
             <button id="btn-rhombus" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
-        </article>
+        </article> -->
 
 
          <!-- Pentagon   5-->
         <article class="w-80 h-96 text-center border">
             <img class="mx-auto w-32 mt-5" src="images/pentagon.png" alt="">
             <h2 class="font-semibold text-3xl mt-5 mb-2">Pentagon</h2>
-            <h4>Area(A) = 0.5 x b x h</h4>
+            <h4>Area(A) = 0.5 x p x b</h4>
 
             <div class="flex ml-16 mt-5">
-                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="pentagon-input" class="w-10 border pl-2" type="text" placeholder="p">
                 <h4 class="inline ml-3">cm </h4>
-                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="pentagon-base-input" class="inline w-10 border ml-10 pl-2" type="text" placeholder="b">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
-            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+            <button id="btn-pentagon" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
         </article>
 
 
@@ -141,15 +147,15 @@
         <article class="w-80 h-96 text-center border">
             <img class="mx-auto w-1/2 mt-5" src="images/ellipse.png" alt="">
             <h2 class="font-semibold text-3xl mt-11 mb-2">Ellipse</h2>
-            <h4>Area(A) = π x b x h</h4>
+            <h4>Area(A) = πab</h4>
 
             <div class="flex ml-16 mt-5">
-                <input class="w-10 border pl-2" type="text" placeholder="b">
+                <input id="input-A" class="w-10 border pl-2" type="text" placeholder="b">
                 <h4 class="inline ml-3">cm</h4>
-                <input class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
+                <input id="input-B" class="inline w-10 border ml-10 pl-2" type="text" placeholder="h">
                 <h4 class="inline ml-3 ">cm</h4>
             </div>
-            <button class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
+            <button id="btn-ellipse" class="bg-blue-500 p-3 mt-5 rounded text-white font-semibold mb-5 w-64">Calculate</button>
         </article>
 
        </div>
@@ -160,6 +166,7 @@
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
     <script src="js/rhombus.js"></script>
+    <script src="js/pentagon.js"></script>
 
 
     <!-- next page botton event handler -->
