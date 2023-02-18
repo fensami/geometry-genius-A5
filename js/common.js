@@ -3,7 +3,15 @@ function inputValueById(element){
     const input = document.getElementById(element);
     const inputString = input.value;
     const inputNumber = parseFloat(inputString);
+    //alert
+    if(inputNumber){
+    }
+    else{
+        alert('please enter amount');
+        setTextElementById();
+    }
     return inputNumber;
+
     
 
 }
