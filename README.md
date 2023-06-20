@@ -1,4 +1,2 @@
-# geometry-genius-resources
-
-### Click here to [Create Private Repo](https://classroom.github.com/a/6nRSQFlh)
-Private Repo Link: [https://classroom.github.com/a/6nRSQFlh](https://classroom.github.com/a/6nRSQFlh)
+## Live link
+# https://scintillating-speculoos-f19c08.netlify.app/
